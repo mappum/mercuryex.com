@@ -1,0 +1,124 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+}
+
+section.container-fluid {
+  padding: 60px;
+  overflow: hidden;
+}
+
+.top {
+  padding-top: 130px !important;
+}
+
+.top nav {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  right: 60px;
+}
+
+section.primary {
+  background: #00313A;
+  color: white;
+}
+section.primary .text-muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+section.primary a.text-muted:hover {
+  color: white;
+}
+
+section.secondary {
+  background: #066157;
+  color: white;
+}
+section.secondary a {
+  color: #aaffff;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+img.logo {
+  height: 50px;
+}
+
+.download-button {
+  border: none;
+  padding: 16px 20px;
+}
+.download-button .fa {
+  margin-right: 10px;
+}
+
+div.feature {
+  text-align: center;
+  padding: 12%;
+  font-size: 16px;
+  margin-top: 24px;
+}
+div.feature h3 {
+  font-weight: bold;
+  margin-top: -18px;
+}
+div.feature i.fa {
+  font-size: 72px;
+  color: #daffff;
+}
+div.feature i.fa::before {
+  text-shadow: 0 1px 0.5px rgba(0,0,0,0.25);
+}
+
+.hex::after {
+  content: '\2b23';
+  display: block;
+  font-size: 2.2em;
+  z-index: -1;
+  position: relative;
+  top: -0.42em;
+  color: #31abe2;
+}
+
+.large {
+  font-size: 16px;
+}
+
+.btn {
+  border-radius: 2px;
+  border: none;
+}
+.btn-primary {
+  background-color: #22A08D;
+}
+.btn-primary:hover {
+  background-color: #1E7467;
+}
+.btn-info {
+  background-color: #1D7A8B;
+}
+.btn-info:hover {
+  background-color: #115561;
+}
+
+ul.download-list {
+  list-style-type: none;
+}
+ul.download-list li {
+  margin-bottom: 16px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.screenshot-container {
+  margin-bottom: -120px;
+}
+
+p {
+  margin-bottom: 16px;
+}

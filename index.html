@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Mercury - Trustless cryptocurrency exchange</title>
+    <title>Mercury - Decentralized exchange</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -78,16 +78,44 @@
 
     <section class="container-fluid secondary">
       <div class="container">
-        <h4>How it works</h4>
-        <br>
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-md-6 how-it-works">
+            <h4>How it works</h4>
+            <br>
             <p>Mercury uses the <strong>cross-chain atomic swap protocol</strong> to facilitate fully trustless peer-to-peer trading, no trusted third party required.</p>
             <p>Trades happen entirely on the blockchain, with no risk of the exchange getting hacked or greedy exchange operators running off with your money. Your private keys are only stored on your computer.</p>
             <p>When making trades, your wallet will use the Mercury Order Book service to find bid or ask offers opened by other traders. This service is centralized, but it is never involved in the actual transfer of funds so it doesn't require any trust.</p>
           </div>
-          <div class="col-sm-5">
-            <code>TODO: visual aid</code>
+          <div class="col-md-6 well swap-protocol">
+            <h4>Atomic Swap Protocol</h4>
+            <p>Mercury uses the <strong>cross-chain atomic swap protocol</strong> to facilitate fully trustless peer-to-peer trading, no trusted third party required.</p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#protocol-details" aria-expanded="false" aria-controls="protocol-details">
+              Show details <i class="fa fa-angle-down"></i>
+            </a>
+            <br>
+            <div id="protocol-details" class="collapse">
+              <hr>
+              <div>
+                <p class="small">The traders create deposit transactions, spending the coins they will be trading away.</p>
+                <p class="small">The deposits can only be redeemed if the secret number X is provided, along with a signature from the person it is paying to. Only Bob knows what X is.</p>
+                <img src="images/swap_deposit.svg">
+              </div>
+              <hr>
+              <div>
+                <p class="small">Bob claims his payout, which sends the coins in Alice's deposit to his wallet. By doing this, he publicly reveals X.</p>
+                <img src="images/swap_payout_a.svg">
+              </div>
+              <hr>
+              <div>
+                <p class="small">Now that X was revealed by Bob, Alice can claim her payout.</p>
+                <img src="images/swap_payout_b.svg">
+              </div>
+              <hr>
+              <div>
+                <p class="small">If during the process one of the parties disappears, the funds can be recovered using the presigned refund transaction.</p>
+                <img src="images/swap_refund.svg">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -117,6 +145,7 @@
     </section>
 
     <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

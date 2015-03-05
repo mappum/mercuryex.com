@@ -102,9 +102,11 @@ div.feature i.fa::before {
   background-color: #115561;
 }
 
-ul.download-list {
+ul.no-style {
   list-style-type: none;
+  padding-left: 0;
 }
+
 ul.download-list li {
   margin-bottom: 16px;
 }

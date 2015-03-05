@@ -118,6 +118,11 @@ h4 {
 .screenshot-container {
   margin-bottom: -120px;
 }
+.screenshot {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
 
 p {
   margin-bottom: 16px;

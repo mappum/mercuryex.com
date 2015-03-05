@@ -141,3 +141,7 @@ p {
 .swap-protocol img {
   width: 100%;
 }
+
+#mc-embedded-subscribe {
+  margin: 0;
+}

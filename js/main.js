@@ -1,4 +1,4 @@
-var PATH = 'https://github.com/mappum/mercury/releases/download/0.0.1-alpha/MercuryWallet-0.0.1-SNAPSHOT.';
+var PATH = 'https://github.com/mappum/mercury/releases/download/0.0.2-alpha/MercuryWallet-0.0.2.';
 
 function getPlatform(platform) {
   var p = platform.toLowerCase();

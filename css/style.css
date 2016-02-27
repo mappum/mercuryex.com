@@ -146,6 +146,19 @@ p {
   margin: 0;
 }
 
+#mc_embed_signup input.mce_inline_error {
+  border: 2px solid red !important;
+}
+
+#mce-responses {
+  font-size: 14px;
+  color: lightgray;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+}
+
 .icon {
   width: 18px;
 }

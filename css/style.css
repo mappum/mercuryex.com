@@ -142,8 +142,15 @@ p {
   width: 100%;
 }
 
+#mc-embedded-subscribe-form {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #mc-embedded-subscribe {
   margin: 0;
+  display: inline-block;
 }
 
 #mc_embed_signup input.mce_inline_error {
